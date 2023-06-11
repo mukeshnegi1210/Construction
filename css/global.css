@@ -20,6 +20,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #333333;
+  padding-top: 74px;
 }
 
 *,
@@ -116,6 +117,7 @@ h6,
   left: 50%;
   transform: translateX(-50%);
   bottom: -10px;
+  width: 100%;
 }
 .title .title-icon img {
   max-width: 15px;
@@ -136,6 +138,14 @@ h6,
   width: 75px;
   height: 3px;
   background-color: #87449a;
+}
+
+.sub-title{
+  font-size: 18px;
+  max-width: 767px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
 }
 /******* Helpers ********************************************************************/
 
@@ -275,12 +285,15 @@ h6,
   top: 44%;
 }
 
+
+
 .pulse:before, .pulse:after {
   content: '';
   width: 80px;
   height: 80px;
   border-radius: 500px;
   position: absolute;
+  border: 5px solid #87449a;
 }
 
 .pulse:before {
@@ -394,4 +407,19 @@ h6,
     opacity: 1;
     filter: alpha(opacity=100);
   }
+}
+
+
+
+.form-control{
+  background-color: #f3f6ff;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border: 0;
+}
+.form-control:focus{
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #87449a;
+
 }
