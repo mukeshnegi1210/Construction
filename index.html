@@ -29,18 +29,25 @@
         <div class="container">
             <div class="inner d-flex align-items-center">
                 <div class="logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="./images/logo.png" alt="logo" />
-
                     </a>
                 </div>
-                <div class="primary-menu-outer ml-auto ">
-                    <ul class="primary-menu d-flex align-items-center mb-0">
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                <button class="menu-open d-lg-none">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="primary-menu-outer ml-auto">
+                    <button class="menu-close d-lg-none">
+                        <span class="fa fa-close"></span>
+                    </button>
+                    <ul class="primary-menu d-flex d-flex flex-column flex-lg-row align-items-center mb-0">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="javascript:void(0);" data-scroll="#About">About</a></li>
+                        <li><a href="javascript:void(0);" data-scroll="#Services">Services</a></li>
+                        <li><a href="javascript:void(0);" data-scroll="#Gallery">Gallery</a></li>
+                        <li><a href="javascript:void(0);" data-scroll="#OurTeam">Team</a></li>
+                        <li><a href="javascript:void(0);" data-scroll="#Testimonials">Testimonials</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -98,7 +105,7 @@
     <section id="About" class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4 mb-md-0">
                     <div class="img">
                         <img src="./images/construction-worker.jpg" alt="construction-worker">
                     </div>
@@ -197,11 +204,11 @@
             <h2 class="title">Our Services
                 <span class="title-icon"><img src="./images/star-christmas.png" alt="star"></span>
             </h2>
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non veritatis assumenda
+            <p class="text-center sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non veritatis assumenda
                 libero minus, maxime in ducimus placeat earum nemo?</p>
             <div class="services-list mt-5">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-4 mb-md-0">
                         <div class="service-box">
                             <div class="img-box">
                                 <img src="./images/service-1.jpg" alt="service img">
@@ -213,7 +220,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-4 mb-md-0">
                         <div class="service-box">
                             <div class="img-box">
                                 <img src="./images/service-2.jpg" alt="service img">
@@ -253,7 +260,7 @@
                 <span class="title-icon"><img src="./images/star-christmas.png" alt="star"></span>
             </h2>
 
-            <p class="text-center">
+            <p class="text-center sub-title">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ea laborum ab repudiandae? Dolores eius,
                 nemo obcaecati quaerat ipsa quidem!
             </p>
@@ -446,12 +453,12 @@
             <h2 class="title">Our Team
                 <span class="title-icon"><img src="./images/star-christmas.png" alt="star"></span>
             </h2>
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium molestias qui
+            <p class="text-center sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium molestias qui
                 fugiat quae quidem
                 officiis deserunt? Quae consequuntur obcaecati quis Lorem ipsum dolor sit amet..</p>
             <div class="team-member-list mt-5">
                 <div class="row">
-                    <div class="col-lg-3 col-md-4">
+                    <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
                         <div class="team-member text-center">
                             <div class="team-member-img">
                                 <img src="./images/team-members/team-member-01.jpg" alt="">
@@ -467,7 +474,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-3 col-md-4">
+                    <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
                         <div class="team-member text-center">
                             <div class="team-member-img">
                                 <img src="./images/team-members/team-member-02.jpg" alt="">
@@ -483,7 +490,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-3 col-md-4">
+                    <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
                         <div class="team-member text-center">
                             <div class="team-member-img">
                                 <img src="./images/team-members/team-member-03.jpg" alt="">
@@ -528,7 +535,7 @@
             <h2 class="title">Client Testimonials
                 <span class="title-icon"><img src="./images/star-christmas.png" alt="star"></span>
             </h2>
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, numquam. Debitis quas
+            <p class="text-center sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, numquam. Debitis quas
                 nobis ad commodi! Adipisci ea aliquid maiores quam?</p>
             <div id="TestimonialSlider" class="carousel slide mt-5" data-ride="carousel">
                 <div class="carousel-inner">
@@ -612,11 +619,11 @@
             <h2 class="title">Contact Us
                 <span class="title-icon"><img src="./images/star-christmas.png" alt="star"></span>
             </h2>
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, numquam. Debitis quas
+            <p class="text-center sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, numquam. Debitis quas
                 nobis ad commodi! Adipisci ea aliquid maiores quam?</p>
             <div class="mt-5">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-4 mb-md-0">
                         <div class="contact-box text-center">
                             <span class="icon text-primary">
                                 <div class="fa fa-map-marker"></div>
@@ -626,7 +633,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-4 mb-md-0">
                         <div class="contact-box text-center">
                             <span class="icon text-primary">
                                 <div class="fa fa-phone"></div>
@@ -660,7 +667,7 @@
         <div class="footer-top py-5">
             <div class="container ">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                         <div class="footer-logo">
                             <img src="./images/logo.png" alt="logo">
                         </div>
@@ -668,7 +675,7 @@
                         </p>
     
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6  mb-4 mb-lg-0">
                         <h4>QUICK Links</h4>
                         <ul class="footer-quick-links">
                             <li><a href="#">Home</a></li>
@@ -678,7 +685,7 @@
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                         <h4>Contact Us</h4>
     
                         <ul class="footer-contact-links">
@@ -720,11 +727,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">© Copyright 2023 | Nobel Construction. All Rights Reserved
+                        <p class="mb-0 text-center text-md-left">© Copyright 2023 | Nobel Construction. All Rights Reserved
                         </p>
                     </div>
                     <div class="col-md-6 text-md-right text-center">
-                        <a href="#">Terms & Conditions</a>
+                        <a href="privacy-policy.html">Privacy Policy</a>
                     </div>
                 </div>
             </div>
