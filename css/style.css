@@ -112,7 +112,8 @@ header .primary-menu li a:hover::before {
 
 #Services .services-list .service-box {
   background-color: #ffffff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+  border: 1px solid #ccc;
 }
 #Services .services-list .service-box .img-box {
   height: 275px;
