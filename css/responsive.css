@@ -26,8 +26,8 @@
   .primary-menu-outer .menu-close {
     position: absolute;
     left: 360px;
-    border: 1px solid #87449a;
-    color: #87449a;
+    border: 1px solid #1b4878;
+    color: #1b4878;
     background-color: transparent;
     width: 30px;
     height: 30px;
@@ -38,8 +38,8 @@
   }
   .menu-open {
     margin-left: auto;
-    border: 1px solid #87449a;
-    color: #87449a;
+    border: 1px solid #1b4878;
+    color: #1b4878;
     background-color: transparent;
     width: 30px;
     height: 30px;
@@ -53,10 +53,11 @@
     max-width: 400px;
     height: 100%;
   }
-  #Gallery .gallery-content .gallery-body .single-gallery{
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
+
+.gallery-box .img-box{
+  flex: 0 0 50%;
+}
+
 }
 
 @media (max-width: 767px) {
@@ -111,8 +112,8 @@
   max-width: calc(100% - 100px);
   width: 100%;
 }
-  #Gallery .gallery-content .gallery-body .single-gallery{
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
+.gallery-box .img-box{
+  flex: 0 0 100%;
+}
+
 }

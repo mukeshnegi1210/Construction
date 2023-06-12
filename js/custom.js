@@ -4,9 +4,29 @@
 $(function () {
   $('#mixit-container').mixItUp();
 
-  $(".fancybox").fancybox();
+  var $gallery = new SimpleLightbox('.gallery-box a', {});
 
+ 
 
+  handleFixedHeader();
+
+  // handling on scroll header
+  $(window).scroll(function () {
+    handleFixedHeader();
+
+  });
+
+  // handle bg of header on scroll 
+  function handleFixedHeader() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 150) {
+
+      $("header").addClass("fixed-header");
+    }
+    else {
+      $("header").removeClass("fixed-header");
+    }
+  }
 
 
   // scroll top ===============================
@@ -26,11 +46,7 @@ $(function () {
 
   // scroll top ends ===============================
 
-
-
-
   $('.menu-open').click(function () {
-
     $('.primary-menu-outer').addClass('active');
   })
   $('.menu-close').click(function () {
@@ -38,7 +54,7 @@ $(function () {
     $('.primary-menu-outer').removeClass('active');
   })
   // block scroll ===============================
-  $('.primary-menu li a ').click(function () {
+  $('.primary-menu li a, .footer-quick-links li a').click(function () {
     $('.primary-menu-outer').removeClass('active');
     var get_scroll_id = $(this).attr('data-scroll');
     $('.primary-menu li a').removeClass("active");
