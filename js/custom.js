@@ -4,7 +4,8 @@
 $(function () {
   $('#mixit-container').mixItUp();
 
-  var $gallery = new SimpleLightbox('.gallery-box a', {});
+  var $gallery = new SimpleLightbox('#Gallery1 a');
+  var $gallery2 = new SimpleLightbox('#Gallery2 a');
 
  
 

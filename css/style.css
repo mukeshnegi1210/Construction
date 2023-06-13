@@ -265,15 +265,18 @@ footer .footer-contact-links li .fa {
 footer .footer-social-links li a {
   display: inline-block;
   background-color: #1b4878;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 5px;
   text-align: center;
-  line-height: 30px;
+  line-height: 40px;
+  transition: all 300ms ease-in;
+  font-size: 30px;
   transition: all 300ms ease-in;
 }
 footer .footer-social-links li a:hover {
   color: #fff;
+  transform: scale(1.1);
 }
 footer .footer-social-links li + li {
   margin-left: 10px;
@@ -365,7 +368,7 @@ footer .footer-social-links li + li {
   opacity: 0;
   visibility: hidden;
 }
-.gallery-box .img-box:hover .overlay{
+.gallery-box .img-box:hover .overlay {
   opacity: 1;
   visibility: visible;
 }
@@ -380,7 +383,28 @@ footer .footer-social-links li + li {
   border-radius: 50%;
 }
 
+#Gallery .nav-tabs {
+  justify-content: center;
+  border-bottom: 0;
+  margin-bottom: 20px;
+}
+#Gallery .nav-tabs .nav-item .nav-link {
+  border: 1px solid #1b4878;
+  border-radius: 0;
+  font-weight: 500;
+  color: #1b4878;
+  text-transform: uppercase;
+}
+#Gallery .nav-tabs .nav-item + .nav-item {
+  margin-left: 10px;
+}
+#Gallery .nav-tabs .nav-item .nav-link.active {
+  background-color: #1b4878;
+  color: #ffffff;
+  border-color: #1b4878;
+}
 
-#Enquiry, #Policy{
+#Enquiry,
+#Policy {
   margin-top: 80px;
 }
